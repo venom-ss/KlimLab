@@ -3,9 +3,9 @@ particlesJS.load("particles-js", "assets/particles.json", function () {
 });
 window.onscroll = () => {
   if (window.scrollY > 150) {
-    navbar.classList.add("fixed-top");
+    navbar.classList.add("fixed-top", "navbar-background");
   } else {
-    navbar.classList.remove("fixed-top");
+    navbar.classList.remove("fixed-top", "navbar-background");
   }
 };
 const navbar = document.querySelector(".navbar");

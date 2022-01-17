@@ -88,6 +88,10 @@ nav ul li a:hover {
   color: rgb(129, 4, 77);
 } */
 
+.navbar-background {
+  background-color: bisque;
+}
+
 .nav-link {
   color: rgb(129, 4, 77) !important;
   font-family: kirovi;
