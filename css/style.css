@@ -1,0 +1,212 @@
+@font-face {
+  font-family: kirovi;
+  src: url("../assets/GLKirovi-Bold.ttf");
+}
+
+@font-face {
+  font-family: bpg_banner;
+  src: url("../assets/bpg_banner.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background-color: rgb(241, 247, 226);
+}
+
+#particles-js {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+.logo-wrapper {
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#logo {
+  display: block;
+  margin-bottom: 10%;
+}
+
+#logo-text {
+  display: block;
+}
+
+.cls-2 {
+  stroke: rgb(129, 4, 77);
+  stroke-width: 3px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s linear forwards;
+}
+
+svg {
+  fill: transparent;
+  animation: fill-logo 3s linear forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fill-logo {
+  to {
+    fill: rgb(129, 4, 77);
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+} */
+/* nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+nav ul li a:hover {
+  color: rgb(129, 4, 77);
+} */
+
+.nav-link {
+  color: rgb(129, 4, 77) !important;
+  font-family: kirovi;
+  font-size: 24px;
+}
+.nav-link:hover {
+  color: rgb(241, 12, 146) !important;
+}
+.navbar-toggler-icon {
+  color: white;
+  background-color: white;
+}
+section {
+  margin-bottom: 20px;
+}
+
+.about-us-inner {
+  padding: 100px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  height: 100%;
+}
+.about-us-inner h2 {
+  margin-top: 100px;
+  font-size: 60px;
+  margin-bottom: 50px;
+  font-family: bpg_banner;
+}
+.about-us-inner p {
+  font-family: bpg_banner;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 200px;
+}
+.about-more {
+  background-color: rgb(129, 4, 77);
+  font-family: kirovi;
+  border-radius: 50px 50px 50px 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+.about-more:hover {
+  background-color: rgb(177, 39, 120);
+  color: white;
+}
+
+.about-more::before {
+  z-index: 30;
+  display: block;
+  background-color: rgb(129, 4, 77);
+  height: 5%;
+  width: 200%;
+  position: absolute;
+  top: 50%;
+  left: -210%;
+  content: " ";
+}
+
+#services {
+  border-radius: 8px;
+}
+
+.service-wrapper {
+  padding: 5px;
+}
+
+.service {
+  background-color: rgba(252, 251, 203, 0.63);
+  padding: 20px;
+  border-radius: 8px;
+  /* border: 3px solid rgb(129, 4, 77); */
+  box-shadow: 0 5px 10px -3px rgb(0, 0, 0);
+  transition: 0.3s;
+}
+
+.service:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.671);
+  transform: translateY(-10px);
+}
+
+.service-img {
+  max-height: 80px;
+}
+.service h3 {
+  color: rgb(211, 7, 126);
+  font-size: 42px;
+  font-family: kirovi;
+  margin-top: 20px;
+}
+.service p {
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  height: 150px;
+  overflow: hidden;
+}
+.service-more {
+  background-color: rgb(129, 4, 77);
+  font-family: kirovi;
+  border-radius: 50px 50px 50px 50px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+.service-more:hover {
+  background-color: rgb(177, 39, 120);
+  color: white;
+}
